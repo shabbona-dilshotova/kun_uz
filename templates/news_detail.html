@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{object.title}}</h1>
+    <p>{{object.body}}</p>
+    <img src="{{object.image.url}}" alt="">
+    <button><a href="{% url 'news_list' %}">new_list</a></button>
+    <button><a href="{% url 'news_delete' object.pk %}">delete</a></button>
+    <button><a href="{% url 'news_update' object.pk %}">update</a></button>
+</body>
+</html>
